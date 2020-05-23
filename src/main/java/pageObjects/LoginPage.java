@@ -15,17 +15,15 @@ public class LoginPage {
         this.driver = driver;
     }
 
-    public void setUsername(String username){
+    public void setUsername(String username) {
         driver.findElement(usernameField).sendKeys(username);
     }
 
-    public void setPassword(String password){
+    public void setPassword(String password) {
         driver.findElement(passwordField).sendKeys(password);
     }
 
-    public void clickLoginButton(){
+    public void clickLoginButton() {
         driver.findElement(loginButton).click();
     }
-
-
 }

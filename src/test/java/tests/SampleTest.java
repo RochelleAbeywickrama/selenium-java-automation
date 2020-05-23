@@ -19,7 +19,7 @@ public class SampleTest {
     String driverPath = "src/main/resources/chromedriver.exe";
 
     @BeforeClass
-    public void setup(){
+    public void setup() {
 
         System.setProperty("webdriver.chrome.driver", driverPath);
         driver = new ChromeDriver();
@@ -31,7 +31,7 @@ public class SampleTest {
     }
 
     @Test
-    public void SampleTestCase(){
+    public void SampleTestCase() {
 
         homePage = new HomePage(driver);
         homePage.clickFormAuthentication();
@@ -42,7 +42,7 @@ public class SampleTest {
     }
 
     @AfterClass
-    public void quit(){
+    public void quit() {
         driver.quit();
     }
 }
